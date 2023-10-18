@@ -1,0 +1,11 @@
+윈도우에서 gradle로 빌드하고 -jar로 배포하는 방식입니다.
+
+​
+
+1.cmd 들어가서, 스프링 프로젝트가 있는 폴더로 이동하기. 저의 경우는 C:\study\hello-spring(빌드하고싶은 프로젝트 폴더) 입니다. cli커맨드는 cd 폴더경로 입니다. (cd C:\study\hello-spring)
+
+2. gradlew 명령어를 순서대로 실행합니다.  > gradlew.bat > gradlew build
+
+3. .jar 실행파일을 찾아갑니다. > cd build > dir (build폴더의 파일 디렉토리 보기 > cd libs > dir
+
+4. java -jar 파일명으로 실행하기. 
