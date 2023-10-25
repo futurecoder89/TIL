@@ -90,7 +90,8 @@
         
        
         System.out.println("price = " + userAPrice); // price = 10000
+        System.out.println("price = " + userBPrice); // price = 10000
 
--> userA와 B가 지역변수가 되었기때문에 서로 다른 값을 가지고있다.
+-> userA와 B가 지역변수가 되었기때문에 서로 다른 값을 가지고있기때문에 동시성문제 해결!!
 
   
