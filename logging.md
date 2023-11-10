@@ -6,11 +6,11 @@
 쉽게 이야기해서 SLF4J는 인터페이스이고, 그 구현체로 Logback 같은 로그 라이브러리를 선택하면 된다. <br>
 실무에서는 스프링 부트가 기본으로 제공하는 Logback을 대부분 사용한다 <br>
 <br>
-로그 선언 <br>
+**로그 선언** <br>
 -private Logger log = LoggerFactory.getLogger(getClass());<br>
 -private static final Logger log = LoggerFactory.getLogger(Xxx.class)<br>
 -@Slf4j : 롬복 사용 가능<br><br>
-로그 호출<br>
+**로그 호출**<br>
 -log.info("hello")<br>
 -System.out.println("hello")<br>
 -log.debug("data={}", data) {}안에 레벨을 설정하면된다<br>
@@ -20,9 +20,9 @@
 #hello.springmvc 패키지와 그 하위 로그 레벨 설정할수있다. application.properties에 추가하면된다<br>
 logging.level.hello.springmvc={} trace,debuf,info,warn,error
 <br><br>
-로그가 출력되는 포멧<br>
+**로그가 출력되는 포멧**<br>
 - 시간, 로그 레벨, 프로세스 ID, 쓰레드 명, 클래스명, 로그 메시지<br><br>
-로그 레벨 설정을 변경해서 출력 결과를 보자. <br>
+**로그 레벨 설정을 변경해서 출력 결과를 보자.** <br>
 - LEVEL: TRACE > DEBUG > INFO > WARN > ERROR <br>
 - 개발 서버는 debug 출력 <br>
 - 운영 서버는 info 출력 <br>
