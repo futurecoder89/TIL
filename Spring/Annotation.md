@@ -10,6 +10,11 @@
   스프링 MVC에서 애노테이션 기반 컨트롤러로 인식한다. -> RequestMappingHandlerMapping이 핸들러의 대상으로 조회한다는 말이다. <br>
   -> 1. ComponentScan의 대상이되고 2.RequestMappingHandlerMapping의 대상이 된다 <br>
 
+@RestController <br>
+@Controller 는 반환 값이 String 이면 뷰 이름으로 인식된다. 그래서 뷰를 찾고 뷰가 랜더링 된다.<br>
+@RestController 는 반환 값으로 뷰를 찾는 것이 아니라, HTTP 메시지 바디에 바로 입력한다. 
+따라서 실행 결과로 ok 메세지를 받을 수 있다. @ResponseBody 와 관련이 있다  <br><br>
+
 @RequestMapping("/springmvc/v1/members/new-form") ModelAndView 메서드명() { return new ModelAndView("경로" ex)"new-form"); <br>
   요청 정보를 매핑한다. 해당 URL이 호출되면 이 메서드가 호출된다. 애노테이션을 <br>
   기반으로 동작하기 때문에, 메서드의 이름은 임의로 지으면 된다. <br>
@@ -35,4 +40,18 @@
         model.addAttribute("member", member);
         return "save-result";
     }
+```
+
+PathVariable(경로 변수) 사용
+
+ * PathVariable 사용
+ * 변수명이 같으면 생략 가능
+ * @PathVariable("userId") String userId -> @PathVariable userId
+ */
+```
+@GetMapping("/mapping/{userId}")
+public String mappingPath(@PathVariable("userId") String data) {
+ log.info("mappingPath userId={}", data);
+ return "ok";
+}
 ```
