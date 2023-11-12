@@ -55,3 +55,16 @@ public String mappingPath(@PathVariable("userId") String data) {
  return "ok";
 }
 ```
+
+@RequestHeader("host") String host
+- 특정 HTTP 헤더를 조회한다.
+- 속성
+- 필수 값 여부: required
+- 기본 값 속성: defaultValue
+- @RequestHeader MultiValueMap<String, String> headerMap
+모든 HTTP 헤더를 MultiValueMap 형식으로 조회한다.
+@CookieValue(value = "myCookie", required = false) String cookie
+- 특정 쿠키를 조회한다.
+- 속성
+- 필수 값 여부: required
+- 기본 값: defaultValue
