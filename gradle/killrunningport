@@ -1,0 +1,9 @@
+1. go to cmd as administrator
+2. type netstat -a -o -n
+
+TCP    127.0.0.1:1337         0.0.0.0:0              LISTENING       4340
+TCP    127.0.0.1:9092         127.0.0.1:50285        ESTABLISHED     24072
+TCP    127.0.0.1:9092         127.0.0.1:53118        ESTABLISHED     24072
+TCP    127.0.0.1:9092         127.0.0.1:53878        ESTABLISHED     24072
+
+3. command ->  taskkill /F /PID 24072
