@@ -8,4 +8,4 @@
 
 3. .jar 실행파일을 찾아갑니다. > cd build > dir (build폴더의 파일 디렉토리 보기 > cd libs > dir
 
-4. java -jar 파일명으로 실행하기. 
+4. java -jar 파일명으로 실행하기. 예시) java -jar jpashop-0.0.1-SNAPSHOT.jar
