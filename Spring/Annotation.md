@@ -1,3 +1,6 @@
+https://lightrun.com/spring-boot-annotations/ 애노테이션에 관한 좋은 자료를 찾았다.. 23-11-15
+
+
 @RequestMapping <br>
   1.RequestMappingHandlerMapping <br>
     RequestMappingHandlerMapping 은 스프링 빈 중에서 @RequestMapping 또는 @Controller 가 <br>
