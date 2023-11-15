@@ -1,0 +1,17 @@
+ @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    private List<OrderItem> orderItems = new ArrayList<>();
+
+persist(orderItemA)
+persist(orderItemB)
+persist(orderItemC)
+persist(order)
+
+에서 CascadeType.ALL을 적용하면
+
+
+persist(orderItemA)
+persist(orderItemB)
+persist(orderItemC)
+위 부분을 생략하고
+persist(order)
+만 해도 OrderItem컬렉션의 모든 엔티티들을 영속화한다
