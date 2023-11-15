@@ -1,4 +1,4 @@
-@ManyToOne 은 기본이 fetch= FetchType.Eager이다.
+@ManyToOne 과 @OneToOne은 기본이 fetch= FetchType.Eager이다.
 JPQL을 실행할 때 N+1 문제가 자주 발생한다.
 FetchType.Lazy로 설정하면 해결할수있다.
 
