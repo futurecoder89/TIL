@@ -1,0 +1,25 @@
+# 단축키
+
+Ctrl + E = 과거 히스토리 보기
+
+Ctrl + Shift + Enter = 자동완성 . 예) ;
+
+Ctrl + alt + m = extract method
+
+Ctrl + alt + v = introduce variable  예) `applicationContext.getBean("memberService", MemberService.class);` → `MemberService memberService = applicationContext.getBean("memberService", MemberService.class);`
+
+Ctrl + D   = Duplicate Line 라인 복사
+
+Ctrl + Shift + T = test 생성
+
+Shift + Shift = 전체검색창
+
+Ctrl + B = Declarations or Usage.   AutoAppConfig에 실행시키면 AutoAppConfig를 import한 테스트를 찾아준다 
+
+Ctrl + Alt + Click = 구현체로 바로 들어감  예 DiscountPolicy 클릭 → FixdiscountPolicy나 RateDiscountPolicy를 선택할수있음
+
+Ctrl + O → protected service = 
+
+`@Override protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {    super.service(req, resp);`
+
+`logging.level.org.apache.coyote.http11=debug` = http 요청 정보들을 로그로 찍어주는 코드.  application.properties에 한줄 넣어주자.
