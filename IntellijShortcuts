@@ -23,3 +23,7 @@ Ctrl + O → protected service =
 `@Override protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {    super.service(req, resp);`
 
 `logging.level.org.apache.coyote.http11=debug` = http 요청 정보들을 로그로 찍어주는 코드.  application.properties에 한줄 넣어주자.
+
+Ctrl + Alt + P = extract parameter
+
+Ctrl + Shift + T = 테스트랑 테스트아닌거랑 선택후 화면 전환
