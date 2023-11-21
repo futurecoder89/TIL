@@ -67,3 +67,9 @@ URL 링크 간단히
   th:href="@{|/basic/items/${item.id}|}"
   상품 이름을 선택하는 링크를 확인해보자.
   리터럴 대체 문법을 활용해서 간단히 사용할 수도 있다.
+
+Th:object="${memberForm}" 
+  memberForm에 있는 object들을 참조하겠다는 말이다. objectForm에는 private String name, private String city가 있다면 그 둘을 사용하겠다는 말이다.
+
+Th:field="*{name}"  
+  id = "name", name= "name"
