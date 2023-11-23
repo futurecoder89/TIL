@@ -1,0 +1,36 @@
+
+1. transaction 
+2. find changes
+3. generate update query // flush() : Essentially the flush() method is a part of the EntityManager interface in JPA. 
+  When we invoke flush() on the EntityManager, the JPA provider in turn executes any SQL statements required to persist or update the entities in the database.
+  The flush modes in JPA determine when the changes made to entities in the persistence context are synchronized with the database.
+4. commit
+
+준영속 엔티티?
+  영속성 컨텍스트가 더는 관리하지 않는 엔티티를 말한다.
+  (여기서는 itemService.saveItem(book) 에서 수정을 시도하는 Book 객체다. Book 객체는 이미 DB
+  에 한번 저장되어서 식별자가 존재한다. 이렇게 임의로 만들어낸 엔티티도 기존 식별자를 가지고 있으면 준
+  영속 엔티티로 볼 수 있다.)
+
+준영속 엔티티를 수정하는 2가지 방법
+  1. 변경 감지 기능 사용 aka dirty checking - recommended
+    영속성 컨텍스트에서 엔티티를 다시 조회한 후에 데이터를 수정하는 방법
+    트랜잭션 안에서 엔티티를 다시 조회, 변경할 값 선택 트랜잭션 커밋 시점에 변경 감지(Dirty Checking)
+    이 동작해서 데이터베이스에 UPDATE SQL 실행
+
+    '''  
+    @Transactional
+      void update(Item itemParam) { //itemParam: 파리미터로 넘어온 준영속 상태의 엔티티
+       Item findItem = em.find(Item.class, itemParam.getId()); //같은 엔티티를 조회한
+      다.
+       findItem.setPrice(itemParam.getPrice()); //데이터를 수정한다.
+      }
+    '''
+  2. 병합( merge ) 사용
+    '''   
+    @Transactional
+    void update(Item itemParam) { //itemParam: 파리미터로 넘어온 준영속 상태의 엔티티
+     Item mergeItem = em.merge(itemParam);
+    }
+    '''
+
