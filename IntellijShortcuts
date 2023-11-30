@@ -28,4 +28,6 @@ Ctrl + Alt + P = extract parameter
 
 Ctrl + Shift + T = 테스트랑 테스트아닌거랑 선택후 화면 전환
 
-Ctrl + R = replace A to B
+Ctrl + R = replace A to B 
+
+Ctrl + Shift + R = replace A to B in (multiple)files
