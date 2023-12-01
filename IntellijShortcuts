@@ -31,3 +31,5 @@ Ctrl + Shift + T = 테스트랑 테스트아닌거랑 선택후 화면 전환
 Ctrl + R = replace A to B 
 
 Ctrl + Shift + R = replace A to B in (multiple)files
+
+Ctrl + P = ()안에 뭐가 들어갈수있는지 보여줌
