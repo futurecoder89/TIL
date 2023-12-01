@@ -33,3 +33,5 @@ Ctrl + R = replace A to B
 Ctrl + Shift + R = replace A to B in (multiple)files
 
 Ctrl + P = ()안에 뭐가 들어갈수있는지 보여줌
+
+Ctrl + X = 줄삭제
