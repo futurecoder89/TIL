@@ -37,3 +37,5 @@ Ctrl + P = ()안에 뭐가 들어갈수있는지 보여줌
 Ctrl + X = 줄삭제
 
 Ctrl + Alt + C = introduce constant (상수로 만들어줌)
+
+Ctrl + O = Override
