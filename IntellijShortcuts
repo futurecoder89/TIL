@@ -39,3 +39,6 @@ Ctrl + X = 줄삭제
 Ctrl + Alt + C = introduce constant (상수로 만들어줌)
 
 Ctrl + O = Override
+
+# 명령어
+"iter" +  tab = 가장 가까이에 있는 컬렉션을 루프로 돌림
