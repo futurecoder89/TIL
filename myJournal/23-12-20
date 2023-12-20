@@ -1,0 +1,2 @@
+JDBC 사용하여 insert/select/update/delete를 연습해보았다. h2 데이터베이스 드라이버를 사용
+테스트 코드를 작성하여 확인하였다.
