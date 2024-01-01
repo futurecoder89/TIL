@@ -1,0 +1,6 @@
+checked와 unchecked exception에 대해서 공부하였다.
+그들을 확인할수있는 test 코드를 작성하여 업로드하였다.
+
+checked는 runtimeexception과 그것의 하위 예외를 제외한 모든 예외(exception의 하위에있는) 들이 해당된다.
+checked exception은 모든 예외를 throw나 catch로 처리해야한다.
+unchecked exception을 throw를 생략할수있다. ( 그렇지만 결국 catch 해야함)
