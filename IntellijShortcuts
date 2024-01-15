@@ -42,5 +42,8 @@ Ctrl + O = Override
 
 Ctrl + f6 = 파라미터 위치바꾸기 전체적용
 
+Ctrl + Shift + down = Move Statement Down
+
 # 명령어
 "iter" +  tab = 가장 가까이에 있는 컬렉션을 루프로 돌림
+
